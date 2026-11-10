@@ -1,8 +1,3 @@
-<p align="center">
-  <img src="images/proofable-lockup-light-mode.svg#gh-light-mode-only" alt="Proofable" width="480">
-  <img src="images/proofable-lockup-dark-mode.svg#gh-dark-mode-only" alt="Proofable" width="480">
-</p>
-
 <h1 align="center">Identity and governance for people and their agents</h1>
 
 <p align="center">
