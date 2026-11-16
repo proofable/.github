@@ -1,8 +1,12 @@
-<h1 align="center">Identity and governance for people and their agents</h1>
+<h1 align="center">Agents that can't do what you never allowed</h1>
 
 <p align="center">
   <a href="https://docs.proofable.me/benchmark"><img src="https://img.shields.io/badge/NVIDIA_Live_Agent_Gauntlet-Winner-2F5097" alt="NVIDIA Live Agent Gauntlet: Winner"></a>
   <a href="https://proofable.me/benchmarks/security"><img src="https://img.shields.io/badge/AgentDojo-attacks_landing_16.4%25_%E2%86%92_6.2%25-2F5097" alt="AgentDojo: attacks that landed fell from 16.4% to 6.2%"></a>
+  <a href="https://proofable.me/benchmarks/memory"><img src="https://img.shields.io/badge/PrecisionMemBench-77%2F77-2F5097" alt="PrecisionMemBench: 77 of 77"></a>
+  <a href="https://proofable.me/benchmarks/governance"><img src="https://img.shields.io/badge/AgentGovBench-48%2F48-2F5097" alt="AgentGovBench: 48 of 48"></a>
+  <a href="https://docs.proofable.me/benchmark"><img src="https://img.shields.io/badge/Hijacked_agent-0%2F6_data_sent_out-2F5097" alt="Hijacked agent: 0 of 6 data sent out"></a>
+  <a href="https://docs.proofable.me/benchmark"><img src="https://img.shields.io/badge/Forgery_test-150%2F150_caught-2F5097" alt="Forgery test: 150 of 150 caught"></a>
 </p>
 
 <p align="center">
@@ -31,42 +35,36 @@
   </picture>
 </p>
 
-⭐ *Help us reach more developers. Star [proofable/agent](https://github.com/proofable/agent).*
-
-Proofable gives every agent you run across Claude Code, Cursor, Codex, ChatGPT and any MCP client its own identity and a permission you sign, checks every action against it outside the agent before it runs, and leaves a receipt anyone can verify offline.
-
-**Agents that can't do what you never allowed.**
+Every agent action is checked against a permission you sign, before it runs, in any MCP client.
 
 ---
 
 ## Where it stands
 
-The results come from the design, not from tuning for a test: every action is checked against a permission its owner signed before it runs, and leaves a receipt anyone can verify. Two industry benchmarks:
-
 | Benchmark | Result |
 |---|---|
-| **NVIDIA Live Agent Gauntlet** | Winner. The top score of the tournament, 98.00, across 20 teams and 11 live heats, with every call checked before it ran |
+| **NVIDIA Live Agent Gauntlet** | #1 of 20 teams: 98.00 |
 | **AgentDojo** (ETH Zurich, prompt injection) | Attacks that landed fell from 16.4% to 6.2% on the same model, with 87% of tasks still done under attack |
+| **Agent memory** (PrecisionMemBench) | **77 of 77** cases, tied for first. Hindsight passed 66; Mem0 and Zep passed 9 |
+| **Agent rules** (AgentGovBench) | **48 of 48** scenarios. The best gateway handled 46; coding agents on their own handled 13 |
+| **Hijacked agent** | **0 of 6** data-theft attempts got out, against 6 of 6 on an all-purpose key |
+| **Forgery test** | **150 of 150** forged receipts caught. [Run it yourself](https://github.com/proofable/docs/tree/main/public/evidence/checks), no account needed |
 
-Method, sources and raw results for every row, plus our own tests (a hijacked agent, forged receipts) with how to rerun them: [docs.proofable.me/benchmark](https://docs.proofable.me/benchmark). The forgery test runs with [no account](https://github.com/proofable/docs/tree/main/public/evidence/checks).
-
----
-
-## Proofable Overview
-
-Proofable is the authority layer your agents answer to. You sign what an agent may do: its tools, its spend, its end date, and which steps wait for your yes. Every call is decided outside the agent's process before it runs, so a fooled or hijacked agent still can't cross the line. Built for developers who let agents do real work and need to prove what they did.
-
-**Key Capabilities:**
-
-- **Its own identity** - every agent gets an ID tied to the person or business it works for
-- **A permission instead of a key** - tools, spend cap, expiry and approvals, signed by the owner and checked before every call
-- **Keys it uses and never sees** - credentials stay in a vault; the agent gets the result, never the secret
-- **Revoke once, stop everywhere** - one revoke stops every copy of the agent in every tool
-- **Receipts anyone can check** - every action is a signed record that verifies offline, without trusting us
+Raw results: [docs.proofable.me/benchmark](https://docs.proofable.me/benchmark)
 
 ---
 
-## 🚀 Quick Start
+Proofable is the portable proof layer for agents. You sign what an agent may do: its tools, its spend, its end date, and which steps wait for your yes. Every call is decided outside the agent's process before it runs, so a fooled or hijacked agent still can't cross the line. Built for developers who let agents do real work and need to prove what they did.
+
+- **Its own identity.** Every agent gets an ID tied to the person or business it works for
+- **A permission instead of a key.** Tools, spend cap, expiry and approvals, signed by the owner and checked before every call
+- **Keys it uses and never sees.** Credentials stay in a vault; the agent gets the result, never the secret
+- **Revoke once, stop everywhere.** One revoke stops every copy of the agent in every tool
+- **Receipts anyone can check.** Every action is a signed record that verifies offline, without trusting us
+
+---
+
+## Start in one command
 
 ### 1. Install Proofable
 
