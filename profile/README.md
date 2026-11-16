@@ -45,7 +45,7 @@ Every agent action is checked against a permission you sign, before it runs, in 
 |---|---|
 | **NVIDIA Live Agent Gauntlet** | #1 of 20 teams: 98.00 |
 | **AgentDojo** (ETH Zurich, prompt injection) | Attacks that landed fell from 16.4% to 6.2% on the same model, with 87% of tasks still done under attack |
-| **Agent memory** (PrecisionMemBench) | **77 of 77** cases. Hindsight passed 66 on the same open toolkit; Mem0 and Zep passed 9. Finding the current rule takes 11.1× fewer tokens than searching every record |
+| **Agent memory** (PrecisionMemBench) | **77 of 77** cases, tied for first. Hindsight passed 66; Mem0 and Zep passed 9 |
 | **Agent rules** (AgentGovBench) | **48 of 48** scenarios. The best gateway handled 46; coding agents on their own handled 13 |
 | **Hijacked agent** | **0 of 6** data-theft attempts got out, against 6 of 6 on an all-purpose key |
 | **Forgery test** | **150 of 150** forged receipts caught. [Run it yourself](https://github.com/proofable/docs/tree/main/public/evidence/checks), no account needed |
