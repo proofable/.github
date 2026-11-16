@@ -1,4 +1,4 @@
-<h1 align="center">Identity and governance for people and their agents</h1>
+<h1 align="center">Agents that can't do what you never allowed</h1>
 
 <p align="center">
   <a href="https://docs.proofable.me/benchmark"><img src="https://img.shields.io/badge/NVIDIA_Live_Agent_Gauntlet-Winner-2F5097" alt="NVIDIA Live Agent Gauntlet: Winner"></a>
@@ -35,11 +35,7 @@
   </picture>
 </p>
 
-⭐ *Help us reach more developers. Star [proofable/agent](https://github.com/proofable/agent).*
-
-Proofable gives every agent you run across Claude Code, Cursor, Codex, ChatGPT and any MCP client its own identity and a permission you sign, checks every action against it outside the agent before it runs, and leaves a receipt anyone can verify offline.
-
-**Agents that can't do what you never allowed.**
+Every agent action is checked against a permission you sign, before it runs, in any MCP client.
 
 ---
 
@@ -47,32 +43,28 @@ Proofable gives every agent you run across Claude Code, Cursor, Codex, ChatGPT a
 
 | Benchmark | Result |
 |---|---|
-| **NVIDIA Live Agent Gauntlet** | Winner. The top score of the tournament, 98.00, across 20 teams and 11 live heats, with every call checked before it ran |
+| **NVIDIA Live Agent Gauntlet** | #1 of 20 teams: 98.00 |
 | **AgentDojo** (ETH Zurich, prompt injection) | Attacks that landed fell from 16.4% to 6.2% on the same model, with 87% of tasks still done under attack |
 | **Agent memory** (PrecisionMemBench) | **77 of 77** cases. Hindsight passed 66 on the same open toolkit; Mem0 and Zep passed 9. Finding the current rule takes 11.1× fewer tokens than searching every record |
 | **Agent rules** (AgentGovBench) | **48 of 48** scenarios. The best gateway handled 46; coding agents on their own handled 13 |
 | **Hijacked agent** | **0 of 6** data-theft attempts got out, against 6 of 6 on an all-purpose key |
 | **Forgery test** | **150 of 150** forged receipts caught. [Run it yourself](https://github.com/proofable/docs/tree/main/public/evidence/checks), no account needed |
 
-Charts and side-by-side comparisons: [proofable.me/benchmarks](https://proofable.me/benchmarks). Sources, method and a public proof for every row: [docs.proofable.me/benchmark](https://docs.proofable.me/benchmark).
+Raw results: [docs.proofable.me/benchmark](https://docs.proofable.me/benchmark)
 
 ---
 
-## Proofable Overview
+Proofable is the portable proof layer for agents. You sign what an agent may do: its tools, its spend, its end date, and which steps wait for your yes. Every call is decided outside the agent's process before it runs, so a fooled or hijacked agent still can't cross the line. Built for developers who let agents do real work and need to prove what they did.
 
-Proofable is the authority layer your agents answer to. You sign what an agent may do: its tools, its spend, its end date, and which steps wait for your yes. Every call is decided outside the agent's process before it runs, so a fooled or hijacked agent still can't cross the line. Built for developers who let agents do real work and need to prove what they did.
-
-**Key Capabilities:**
-
-- **Its own identity** - every agent gets an ID tied to the person or business it works for
-- **A permission instead of a key** - tools, spend cap, expiry and approvals, signed by the owner and checked before every call
-- **Keys it uses and never sees** - credentials stay in a vault; the agent gets the result, never the secret
-- **Revoke once, stop everywhere** - one revoke stops every copy of the agent in every tool
-- **Receipts anyone can check** - every action is a signed record that verifies offline, without trusting us
+- **Its own identity.** Every agent gets an ID tied to the person or business it works for
+- **A permission instead of a key.** Tools, spend cap, expiry and approvals, signed by the owner and checked before every call
+- **Keys it uses and never sees.** Credentials stay in a vault; the agent gets the result, never the secret
+- **Revoke once, stop everywhere.** One revoke stops every copy of the agent in every tool
+- **Receipts anyone can check.** Every action is a signed record that verifies offline, without trusting us
 
 ---
 
-## 🚀 Quick Start
+## Start in one command
 
 ### 1. Install Proofable
 
