@@ -1,15 +1,6 @@
 <h1 align="center">Agents that can't do what you never allowed</h1>
 
 <p align="center">
-  <a href="https://docs.proofable.me/benchmark"><img src="https://img.shields.io/badge/NVIDIA_Live_Agent_Gauntlet-Winner-2F5097" alt="NVIDIA Live Agent Gauntlet: Winner"></a>
-  <a href="https://proofable.me/benchmarks/security"><img src="https://img.shields.io/badge/AgentDojo-attacks_landing_16.4%25_%E2%86%92_6.2%25-2F5097" alt="AgentDojo: attacks that landed fell from 16.4% to 6.2%"></a>
-  <a href="https://proofable.me/benchmarks/memory"><img src="https://img.shields.io/badge/PrecisionMemBench-77%2F77-2F5097" alt="PrecisionMemBench: 77 of 77"></a>
-  <a href="https://proofable.me/benchmarks/governance"><img src="https://img.shields.io/badge/AgentGovBench-48%2F48-2F5097" alt="AgentGovBench: 48 of 48"></a>
-  <a href="https://docs.proofable.me/benchmark"><img src="https://img.shields.io/badge/Hijacked_agent-0%2F6_data_sent_out-2F5097" alt="Hijacked agent: 0 of 6 data sent out"></a>
-  <a href="https://docs.proofable.me/benchmark"><img src="https://img.shields.io/badge/Forgery_test-150%2F150_caught-2F5097" alt="Forgery test: 150 of 150 caught"></a>
-</p>
-
-<p align="center">
   <a href="https://www.npmjs.com/package/@proofable/sdk"><img src="https://img.shields.io/npm/v/%40proofable%2Fsdk?label=%40proofable%2Fsdk&color=98C0EF" alt="npm"></a>
   <a href="https://github.com/proofable/sdk/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-blue.svg" alt="Apache-2.0"></a>
   <a href="https://docs.proofable.me"><img src="https://img.shields.io/badge/docs-proofable.me-0369a1" alt="Docs"></a>
@@ -21,7 +12,7 @@
   |
   <a href="https://docs.proofable.me">Docs</a>
   |
-  <a href="https://docs.proofable.me/benchmark">Benchmarks</a>
+  <a href="https://proofable.me/benchmarks">Benchmarks</a>
   |
   <a href="https://github.com/proofable/agent">Agent template</a>
   |
@@ -35,62 +26,44 @@
   </picture>
 </p>
 
-Every agent action is checked against a permission you sign, before it runs, in any MCP client.
-
----
-
-## Where it stands
-
-| Benchmark | Result |
-|---|---|
-| **NVIDIA Live Agent Gauntlet** | #1 of 20 teams: 98.00 |
-| **AgentDojo** (ETH Zurich, prompt injection) | Attacks that landed fell from 16.4% to 6.2% on the same model, with 87% of tasks still done under attack |
-| **Agent memory** (PrecisionMemBench) | **77 of 77** cases, tied for first. Hindsight passed 66; Mem0 and Zep passed 9 |
-| **Agent rules** (AgentGovBench) | **48 of 48** scenarios. The best gateway handled 46; coding agents on their own handled 13 |
-| **Hijacked agent** | **0 of 6** data-theft attempts got out, against 6 of 6 on an all-purpose key |
-| **Forgery test** | **150 of 150** forged receipts caught. [Run it yourself](https://github.com/proofable/docs/tree/main/public/evidence/checks), no account needed |
-
-Raw results: [docs.proofable.me/benchmark](https://docs.proofable.me/benchmark)
-
----
-
-Proofable is the portable proof layer for agents. You sign what an agent may do: its tools, its spend, its end date, and which steps wait for your yes. Every call is decided outside the agent's process before it runs, so a fooled or hijacked agent still can't cross the line. Built for developers who let agents do real work and need to prove what they did.
-
-- **Its own identity.** Every agent gets an ID tied to the person or business it works for
-- **A permission instead of a key.** Tools, spend cap, expiry and approvals, signed by the owner and checked before every call
-- **Keys it uses and never sees.** Credentials stay in a vault; the agent gets the result, never the secret
-- **Revoke once, stop everywhere.** One revoke stops every copy of the agent in every tool
-- **Receipts anyone can check.** Every action is a signed record that verifies offline, without trusting us
-
----
+You sign what an agent may do: its tools, its spend, its end date, and which steps wait for your yes. Every call is checked outside the agent before it runs, in any MCP client, so a hijacked agent still can't cross the line.
 
 ## Start in one command
 
-### 1. Install Proofable
-
-**Copy & paste setup prompt into your coding agent**
+Paste this into your coding agent:
 
 ```text
 Set me up for Proofable. With a terminal, run `npx -y @proofable/sdk setup`. Otherwise fetch and follow https://raw.githubusercontent.com/proofable/mcp/main/skills/proofable-setup/SKILL.md
 ```
 
-Or connect any MCP client to `https://mcp.proofable.me/mcp`.
+Or connect any MCP client to `https://mcp.proofable.me/mcp`. Then use your agents as usual: anything outside the permission is stopped, and anything marked for approval waits for you.
 
-### 2. Use your agents normally
+## What you get
 
-Your agents keep working in the tools you already use. Anything outside the permission is stopped before it runs, and anything you marked for approval waits for your yes.
+- **Its own identity.** Every agent has an ID tied to the person or business it works for.
+- **A permission instead of a key.** Tools, spend cap, expiry and approvals, checked before every call.
+- **Keys it uses and never sees.** Credentials stay in a vault; the agent gets the result, never the secret.
+- **Revoke once, stop everywhere.** One revoke stops every copy of the agent in every tool.
+- **Receipts anyone can check.** Every action leaves a signed record that verifies offline.
 
-### 3. Check the receipts
+## Results
 
-Every receipt verifies offline. Try to forge one:
+| Benchmark | Result |
+|---|---|
+| **NVIDIA Live Agent Gauntlet** | #1 of 20 teams: 98.00 |
+| **AgentDojo** (ETH Zurich, prompt injection) | Attacks that landed fell from 16.4% to 6.2% on the same model, with 87% of tasks still done |
+| **PrecisionMemBench** (agent memory) | **77 of 77**, tied for first. Hindsight 66; Mem0 and Zep 9 |
+| **AgentGovBench** (agent rules) | **48 of 48**. Best gateway 46; coding agents on their own 13 |
+| **Hijacked agent** | **0 of 6** data-theft attempts got out, against 6 of 6 on an all-purpose key |
+| **Forgery test** | **150 of 150** forged receipts caught |
+
+Run the forgery test yourself, no account needed:
 
 ```bash
 git clone --depth 1 https://github.com/proofable/docs
 cd docs/public/evidence/checks && npm install && node tamper-check.mjs
 ```
 
-150 forgery attempts across ten kinds of tampering, 150 caught. No account needed.
-
----
+Methods and raw results: [proofable.me/benchmarks](https://proofable.me/benchmarks)
 
 Free to start with 500 credits a month. Make it Proofable.
