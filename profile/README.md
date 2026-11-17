@@ -2,7 +2,7 @@
   <img src="images/hero.webp" width="880" alt="An AI tool picks up your launch notes, rules and agents from your Proofable profile while your keys stay in the vault, and the same profile reaches every AI tool you use">
 </p>
 
-<h1 align="center">The portable proof layer for people, businesses and AI agents</h1>
+<h1 align="center">The portable proof layer for AI</h1>
 
 <p align="center">
   <b>Make AI do your work and prove it.</b><br>
@@ -31,7 +31,7 @@
   <a href="https://proofable.me/profile?tab=chat&ref=github"><img src="images/platform.png" width="880" alt="The Proofable dashboard with three agents and their runs, an activity feed, and a release waiting for your approval with Stop and Approve and run"></a>
 </p>
 
-Approve, stop or chat with any agent, and see every run and the work it is on.
+Approve, stop or chat with any agent, and see every run.
 
 ## The same rules in your terminal
 
@@ -49,7 +49,7 @@ Allowed calls go through. Anything else stops before it runs.
 | You ask any AI tool | What happens |
 |---|---|
 | "Pick up the launch where we left off." | It loads your current notes, rules and agents from your profile |
-| "Refund order 4821 for $18." | Your Operator agent refunds it with the Stripe key it never sees, and leaves a receipt |
+| "Refund order 4821 for $18." | Your agent refunds it with a Stripe key it never sees, and leaves a receipt |
 | "Write the Monday brief every week at 9:00." | A scheduled job pulls your team notes and the web, with every source on record |
 | "Triage new alerts." | It files and labels issues, and it cannot run commands or change its own limits |
 | "Close customer account 2291." | It waits for your approval, because the action cannot be undone |
@@ -62,7 +62,7 @@ Allowed calls go through. Anything else stops before it runs.
 <a href="https://claude.ai/settings/connectors"><img src="images/buttons/claude.png" alt="Add to Claude" height="44"></a>
 <a href="https://chatgpt.com/plugins/plugin_asdk_app_6ae65c2bac0881918812c63246c7e6c9"><img src="images/buttons/chatgpt.png" alt="Add to ChatGPT" height="44"></a>
 
-Every AI tool on your machine, in one command. It finds Claude Code, Codex, Cursor and VS Code and adds Proofable to each:
+One command adds Proofable to Claude Code, Codex, Cursor and VS Code on your machine:
 
 ```bash
 npx -y @proofable/sdk setup
@@ -80,8 +80,6 @@ Or set up one client:
 | **VS Code** | [Install](https://vscode.dev/redirect/mcp/install?name=proofable&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.proofable.me%2Fmcp%22%7D) or [Insiders](https://insiders.vscode.dev/redirect/mcp/install?name=proofable&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.proofable.me%2Fmcp%22%7D&quality=insiders), then start it from the MCP server list |
 | **Hermes** | `hermes mcp add proofable --url https://mcp.proofable.me/mcp --auth oauth` then `hermes mcp login proofable` |
 | **Any other client** | Add `https://mcp.proofable.me/mcp` in its MCP settings, then sign in |
-
-Keep one Proofable connection per client. A plugin plus a manual entry creates a duplicate.
 
 ## Proofable against the usual way
 
