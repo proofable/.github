@@ -48,10 +48,10 @@ Allowed calls go through. Anything else stops before it runs.
 
 ## Start in one click
 
-<a href="https://cursor.com/en/install-mcp?name=proofable&config=eyJ1cmwiOiJodHRwczovL21jcC5wcm9vZmFibGUubWUvbWNwIn0%3D"><img src="images/buttons/cursor.svg" alt="Add to Cursor"></a>
-<a href="https://vscode.dev/redirect/mcp/install?name=proofable&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.proofable.me%2Fmcp%22%7D"><img src="images/buttons/vscode.svg" alt="Install in VS Code"></a>
-<a href="https://insiders.vscode.dev/redirect/mcp/install?name=proofable&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.proofable.me%2Fmcp%22%7D&quality=insiders"><img src="images/buttons/vscode-insiders.svg" alt="Install in VS Code Insiders"></a>
-<a href="https://chatgpt.com/plugins/plugin_asdk_app_6ae65c2bac0881918812c63246c7e6c9"><img src="images/buttons/chatgpt.svg" alt="Add to ChatGPT"></a>
+<a href="https://cursor.com/en/install-mcp?name=proofable&config=eyJ1cmwiOiJodHRwczovL21jcC5wcm9vZmFibGUubWUvbWNwIn0%3D"><img src="images/buttons/cursor.png" alt="Add to Cursor" height="44"></a>
+<a href="https://vscode.dev/redirect/mcp/install?name=proofable&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.proofable.me%2Fmcp%22%7D"><img src="images/buttons/vscode.png" alt="Install in VS Code" height="44"></a>
+<a href="https://insiders.vscode.dev/redirect/mcp/install?name=proofable&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.proofable.me%2Fmcp%22%7D&quality=insiders"><img src="images/buttons/vscode-insiders.png" alt="Install in VS Code Insiders" height="44"></a>
+<a href="https://chatgpt.com/plugins/plugin_asdk_app_6ae65c2bac0881918812c63246c7e6c9"><img src="images/buttons/chatgpt.png" alt="Add to ChatGPT" height="44"></a>
 
 Every AI tool on your machine, in one command. It finds Claude Code, Codex, Cursor and VS Code and adds Proofable to each:
 
@@ -59,27 +59,7 @@ Every AI tool on your machine, in one command. It finds Claude Code, Codex, Curs
 npx -y @proofable/sdk setup
 ```
 
-Claude Code installs the server and its skills together:
-
-```text
-/plugin marketplace add proofable/mcp
-/plugin install proofable-mcp@proofable
-```
-
-Codex, from a terminal:
-
-```bash
-npx -y @proofable/sdk setup --client codex
-codex mcp login proofable
-```
-
-Anywhere else, paste this into your coding agent, or add `https://mcp.proofable.me/mcp` as a connector:
-
-```text
-Set me up for Proofable. With a terminal, run `npx -y @proofable/sdk setup`. Otherwise fetch and follow https://raw.githubusercontent.com/proofable/mcp/main/skills/proofable-setup/SKILL.md
-```
-
-[Setup for every client](https://docs.proofable.me/mcp/setup)
+[Claude Code, Codex, Hermes and every other client](https://github.com/proofable/mcp#connect-in-one-click)
 
 ## What you get
 
