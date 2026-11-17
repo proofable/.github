@@ -74,7 +74,7 @@ Keep one Proofable connection per client. A plugin plus a manual entry creates a
 
 ## What you get
 
-- **Your work in every AI tool.** Notes, rules, agents and skills load from one profile, so you never explain them twice.
+- **Nothing explained twice.** Notes, rules, agents and skills load from one profile into every AI tool.
 - **Only what is true now.** A new fact replaces the old one, so answers come out right at a fraction of the tokens.
 - **Agents inside your rules.** Choose what each agent may do, cap its spend and set when its access ends. Irreversible actions wait for you, and one revoke stops it everywhere.
 - **Keys they use and never see.** Credentials stay in a vault, bound to the agent that needs them.
