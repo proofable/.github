@@ -2,11 +2,11 @@
   <img src="images/hero.webp" width="880" alt="An AI tool picks up your launch notes, rules and agents from your Proofable profile while your keys stay in the vault, and the same profile reaches every AI tool you use">
 </p>
 
-<h1 align="center">Every AI knows your work and follows your rules</h1>
+<h1 align="center">The portable proof layer for people, businesses and AI agents</h1>
 
 <p align="center">
-  One profile carries your context, agents, skills and keys into the tools you already use.<br>
-  Every action is checked before it runs and leaves a receipt anyone can check.
+  <b>Make AI do your work and prove it.</b><br>
+  Every AI you use knows your work and follows your rules.
 </p>
 
 <p align="center">
@@ -59,103 +59,22 @@ npx -y @proofable/sdk setup
 
 Or set up one client:
 
-<details>
-<summary><b>Claude Code</b></summary>
-
-Run these in Claude Code to install the server and its skills:
-
-```text
-/plugin marketplace add proofable/mcp
-/plugin install proofable-mcp@proofable
-```
-
-Run `/mcp`, select Proofable and sign in.
-
-</details>
-
-<details>
-<summary><b>Claude and Claude Desktop</b></summary>
-
-[Open Connectors in Claude](https://claude.ai/settings/connectors), add a custom connector with this URL, then choose Connect and sign in.
-
-```text
-https://mcp.proofable.me/mcp
-```
-
-</details>
-
-<details>
-<summary><b>ChatGPT</b></summary>
-
-[Add Proofable to ChatGPT](https://chatgpt.com/plugins/plugin_asdk_app_6ae65c2bac0881918812c63246c7e6c9), select Install plugin, then sign in when ChatGPT asks.
-
-</details>
-
-<details>
-<summary><b>Codex</b></summary>
-
-```bash
-npx -y @proofable/sdk setup --client codex
-codex mcp login proofable
-```
-
-Codex opens browser sign-in.
-
-</details>
-
-<details>
-<summary><b>Cursor</b></summary>
-
-[Add Proofable to Cursor](https://cursor.com/en/install-mcp?name=proofable&config=eyJ1cmwiOiJodHRwczovL21jcC5wcm9vZmFibGUubWUvbWNwIn0%3D), turn it on in Customize, and complete the sign-in Cursor opens.
-
-</details>
-
-<details>
-<summary><b>VS Code</b></summary>
-
-[Install in VS Code](https://vscode.dev/redirect/mcp/install?name=proofable&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.proofable.me%2Fmcp%22%7D) or [VS Code Insiders](https://insiders.vscode.dev/redirect/mcp/install?name=proofable&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.proofable.me%2Fmcp%22%7D&quality=insiders), start Proofable from the MCP server list, and complete the sign-in VS Code opens.
-
-</details>
-
-<details>
-<summary><b>Hermes</b></summary>
-
-```bash
-hermes mcp add proofable --url https://mcp.proofable.me/mcp --auth oauth
-hermes mcp login proofable
-```
-
-</details>
-
-<details>
-<summary><b>Any other client</b></summary>
-
-Add this URL in your client's MCP settings, then complete its sign-in:
-
-```json
-{
-  "mcpServers": {
-    "proofable": {
-      "type": "http",
-      "url": "https://mcp.proofable.me/mcp"
-    }
-  }
-}
-```
-
-Or paste this into your coding agent:
-
-```text
-Set me up for Proofable. With a terminal, run `npx -y @proofable/sdk setup`. Otherwise fetch and follow https://raw.githubusercontent.com/proofable/mcp/main/skills/proofable-setup/SKILL.md
-```
-
-</details>
+| Client | Set up |
+|---|---|
+| **Claude Code** | `/plugin marketplace add proofable/mcp` then `/plugin install proofable-mcp@proofable`, then run `/mcp` and sign in |
+| **Claude** and **Claude Desktop** | [Open Connectors](https://claude.ai/settings/connectors), add `https://mcp.proofable.me/mcp` as a custom connector, then Connect |
+| **ChatGPT** | [Install the plugin](https://chatgpt.com/plugins/plugin_asdk_app_6ae65c2bac0881918812c63246c7e6c9), then sign in |
+| **Codex** | `npx -y @proofable/sdk setup --client codex` then `codex mcp login proofable` |
+| **Cursor** | [Add to Cursor](https://cursor.com/en/install-mcp?name=proofable&config=eyJ1cmwiOiJodHRwczovL21jcC5wcm9vZmFibGUubWUvbWNwIn0%3D), then turn it on in Customize |
+| **VS Code** | [Install](https://vscode.dev/redirect/mcp/install?name=proofable&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.proofable.me%2Fmcp%22%7D) or [Insiders](https://insiders.vscode.dev/redirect/mcp/install?name=proofable&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.proofable.me%2Fmcp%22%7D&quality=insiders), then start it from the MCP server list |
+| **Hermes** | `hermes mcp add proofable --url https://mcp.proofable.me/mcp --auth oauth` then `hermes mcp login proofable` |
+| **Any other client** | Add `https://mcp.proofable.me/mcp` in its MCP settings, then sign in |
 
 Keep one Proofable connection per client. A plugin plus a manual entry creates a duplicate.
 
 ## What you get
 
-- **Your work in every AI tool.** Notes, rules, agents and skills load from one profile, so you never explain them twice.
+- **Nothing explained twice.** Notes, rules, agents and skills load from one profile into every AI tool.
 - **Only what is true now.** A new fact replaces the old one, so answers come out right at a fraction of the tokens.
 - **Agents inside your rules.** Choose what each agent may do, cap its spend and set when its access ends. Irreversible actions wait for you, and one revoke stops it everywhere.
 - **Keys they use and never see.** Credentials stay in a vault, bound to the agent that needs them.
