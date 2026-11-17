@@ -7,7 +7,7 @@
 <p align="center">
   <b>Make AI do your work and prove it.</b><br>
   Every AI you use knows your work and follows your rules.<br>
-  Finds what's current in 11.1x fewer tokens and holds all 48 agent rules.
+  It finds what's current with 11x fewer tokens, so you pay for less.
 </p>
 
 <p align="center">
