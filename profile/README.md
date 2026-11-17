@@ -2,12 +2,11 @@
   <img src="images/hero.webp" width="880" alt="An AI tool picks up your launch notes, rules and agents from your Proofable profile while your keys stay in the vault, and the same profile reaches every AI tool you use">
 </p>
 
-<h1 align="center">Make AI do your work and prove it</h1>
+<h1 align="center">The portable proof layer for people, businesses and AI agents</h1>
 
 <p align="center">
-  <b>The portable proof layer for people, businesses and AI agents.</b><br>
-  Every AI you use knows your work and follows your rules,<br>
-  and every action leaves a receipt anyone can check.
+  <b>Make AI do your work and prove it.</b><br>
+  Every AI you use knows your work and follows your rules.
 </p>
 
 <p align="center">
