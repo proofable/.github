@@ -2,10 +2,10 @@
   <img src="images/hero.webp" width="880" alt="An AI tool picks up your launch notes, rules and agents from your Proofable profile while your keys stay in the vault, and the same profile reaches every AI tool you use">
 </p>
 
-<h1 align="center">Your AI knows your work and follows your rules</h1>
+<h1 align="center">Every AI knows your work and follows your rules</h1>
 
 <p align="center">
-  One profile carries your context, agents, skills and keys into every AI tool you use.<br>
+  One profile carries your context, agents, skills and keys into the tools you already use.<br>
   Every action is checked before it runs and leaves a receipt anyone can check.
 </p>
 
@@ -47,22 +47,15 @@ Set me up for Proofable. With a terminal, run `npx -y @proofable/sdk setup`. Oth
 
 [Setup for every client](https://docs.proofable.me/mcp/setup)
 
-## What you get
-
-- **Your work in every AI tool.** Notes, rules, agents and skills load from one profile, so you never explain them twice.
-- **Only what is true now.** A new fact replaces the old one, so answers come out right at a fraction of the tokens.
-- **Agents inside your rules.** Choose what each agent may do, cap its spend and set when its access ends. Irreversible actions wait for you, and one revoke stops it everywhere.
-- **Keys they use and never see.** Credentials stay in a vault, bound to the agent that needs them.
-- **A receipt for every action.** It checks offline in milliseconds, so the next agent trusts the work instead of redoing it.
-- **Prove who you are once.** Reuse it in every app, gate your own app on it, and sell your agents and tools on the [marketplace](https://proofable.me/marketplace?ref=github).
-
-## The platform and the terminal
+## Run every agent from one place
 
 <p align="center">
-  <img src="images/platform.png" width="880" alt="Your Proofable profile with every connected AI tool sharing the same agents and limits, beside one agent's allowed and blocked actions, spend cap and end date">
+  <a href="https://proofable.me/profile?tab=chat&ref=github"><img src="images/platform.png" width="880" alt="The Proofable dashboard with three agents and their runs, an activity feed, and a release waiting for your approval with Stop and Approve and run"></a>
 </p>
 
-**Your profile.** Every AI tool you connect gets the same agents and limits, set once.
+Approve, stop or chat with any agent, and see every run and the work it is on.
+
+## The same rules in your terminal
 
 <p align="center">
   <picture>
@@ -71,7 +64,16 @@ Set me up for Proofable. With a terminal, run `npx -y @proofable/sdk setup`. Oth
   </picture>
 </p>
 
-**Your terminal.** The same rules run wherever the agent does. Allowed calls go through, and anything else stops before it runs.
+Allowed calls go through. Anything else stops before it runs.
+
+## What you get
+
+- **Your work in every AI tool.** Notes, rules, agents and skills load from one profile, so you never explain them twice.
+- **Only what is true now.** A new fact replaces the old one, so answers come out right at a fraction of the tokens.
+- **Agents inside your rules.** Choose what each agent may do, cap its spend and set when its access ends. Irreversible actions wait for you, and one revoke stops it everywhere.
+- **Keys they use and never see.** Credentials stay in a vault, bound to the agent that needs them.
+- **A receipt for every action.** It checks offline in milliseconds, so the next agent trusts the work instead of redoing it.
+- **Prove who you are once.** Reuse it in every app, gate your own app on it, and sell your agents and tools on the [marketplace](https://proofable.me/marketplace?ref=github).
 
 ## Results
 
