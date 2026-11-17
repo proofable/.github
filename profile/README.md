@@ -43,7 +43,7 @@ Approve, stop or chat with any agent, and see every run.
   </picture>
 </p>
 
-Allowed calls go through. Anything else stops before it runs.
+Allowed actions go through. Anything else is stopped before it runs.
 
 ## Ask it to do real work
 
@@ -89,10 +89,10 @@ Or set up one client:
 
 | You need | The usual way | With Proofable |
 |---|---|---|
-| AI that knows your work | Re-explain it in every tool, or a memory layer that can hand back a replaced fact | One profile in every AI tool, loading only what is true now |
-| Agents that follow your rules | Approval prompts per tool, or a gateway that cannot check who allowed the call | A permission you sign and can revoke, checked before every call |
+| AI that knows your work | Re-explain it in every tool, or use a memory tool that can hand back old facts | One profile in every AI tool, with only what is true now |
+| Agents that follow your rules | Click approve in every tool, or a gateway that cannot tell who allowed the action | Limits you set once and can switch off, checked before every action |
 | Keys that stay safe | An all-purpose API key pasted into the agent | Keys in a vault, used by the agent and never shown to it |
-| Proof of what happened | Logs and traces you have to take on trust | A signed receipt for every action, checked offline in milliseconds |
+| Proof of what happened | Logs you have to take on trust | A receipt for every action that anyone can check in milliseconds |
 | Work handed between agents | The next agent redoes it | The next agent checks the receipt and carries on |
 | Knowing who you deal with | Sign up and verify again in every app | Prove it once and reuse it everywhere |
 
@@ -107,7 +107,7 @@ Keep your sign-in, framework and keys. Proofable adds the limits and the proof.
 | **Operations** | The Monday brief written before you wake, sources and run on record |
 | **Sales** | A research report sold only to verified company domains, delivered when the check and payment clear |
 | **Legal** | Contract review bought from a firm whose domain you can check first, delivered with a receipt |
-| **Developer tools** | Your MCP server priced per call, connected from Claude or Cursor and settled in USDC |
+| **Developer tools** | Charge per call for your MCP server, used from Claude or Cursor and paid in USDC |
 | **Communities** | Token holders get in free, and everyone else buys access by card |
 
 ## Sell what you build
@@ -122,10 +122,10 @@ List an agent, MCP server, skill, report or data set. Choose what buyers must pr
 |---|---|---|
 | Memory questions answered right ([PrecisionMemBench](https://proofable.me/benchmarks/memory?ref=github)) | **77 of 77** | Mem0 9 |
 | Tokens to find the current rule | **43,169** | 479,623 searching every record |
-| Rule scenarios held ([AgentGovBench](https://proofable.me/benchmarks/governance?ref=github)) | **48 of 48** | Best gateway 46 |
-| Prompt injections that landed ([AgentDojo](https://proofable.me/benchmarks/security?ref=github)) | **6.2%**, with 87% of tasks done | 16.4% with no defense |
-| Private data out of a hijacked agent | **0 of 6** | 6 of 6 on an all-purpose key |
-| Forged receipts accepted | **0 of 150** | 150 of 150 by a format-only check |
+| Agent rules followed ([AgentGovBench](https://proofable.me/benchmarks/governance?ref=github)) | **48 of 48** | Best gateway 46 |
+| Hidden attacks that got through ([AgentDojo](https://proofable.me/benchmarks/security?ref=github)) | **6.2%**, with 87% of tasks done | 16.4% with no defense |
+| Private data a hijacked agent leaked | **0 of 6** | 6 of 6 with an all-access key |
+| Fake receipts accepted | **0 of 150** | 150 of 150 by a basic file check |
 
 Top score of 20 teams in NVIDIA's Live Agent Gauntlet, 98.00. [Every method and run](https://proofable.me/benchmarks?ref=github)
 
