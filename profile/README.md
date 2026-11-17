@@ -55,6 +55,8 @@ Allowed calls go through. Anything else stops before it runs.
 | "Triage new alerts." | It files and labels issues, and it cannot run commands or change its own limits |
 | "Close customer account 2291." | It waits for your approval, because the action cannot be undone |
 | "Sell my research report to verified companies." | A listing checks each buyer's company domain and takes payment by card |
+| "Connect our Linear MCP server." | Its token goes to the vault, and every call your agents make runs under their limits |
+| "Let only real people into my app." | A proof-of-human gate, and anyone who already proved it gets straight in |
 
 ## Start in one click
 
@@ -127,6 +129,8 @@ List an agent, MCP server, skill, report or data set. Choose what buyers must pr
 
 Top score of 20 teams in NVIDIA's Live Agent Gauntlet, 98.00. [Every method and run](https://proofable.me/benchmarks?ref=github)
 
+Mapped to the [OWASP Agentic Top 10](https://proofable.me/compliance/owasp-agentic-top-10?ref=github) and the [EU AI Act and NIST AI RMF](https://proofable.me/compliance/eu-ai-act-nist?ref=github).
+
 Try to forge a receipt yourself, no account needed:
 
 ```bash
@@ -144,6 +148,6 @@ cd docs/public/evidence/checks && npm install && node tamper-check.mjs
 | [**docs**](https://github.com/proofable/docs) | Docs, benchmark evidence and schemas |
 | [**agent-gauntlet**](https://github.com/proofable/agent-gauntlet) | The submission that topped NVIDIA's Live Agent Gauntlet, receipts included |
 
-Free to start with 500 credits a month. **[Start free](https://proofable.me/profile?tab=chat&ref=github)**
+Free to start with 500 credits a month. **[Start free](https://proofable.me/profile?tab=chat&ref=github)** or [book a pilot](https://proofable.me/pilot?ref=github) and go live with our team.
 
 Make it Proofable.
