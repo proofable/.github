@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://proofable.me/proof/0x6e0c65367d27489d615263908a80e1f97e64684664a465dfc5120290af2ef2cf"><img src="https://img.shields.io/badge/proofable.me-verified_on_Proofable-2F5097?logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IlByb29mYWJsZSBtYXJrIiBzaGFwZS1yZW5kZXJpbmc9Imdlb21ldHJpY1ByZWNpc2lvbiI+PHBhdGggZD0iTSA0MDAgMjU2IEEgMTg0IDE4NCAwIDEgMSAzMiAyNTYgQSAxODQgMTg0IDAgMSAxIDQwMCAyNTYgWiBNIDM2MyAyNTYgQSAxNDcgMTQ3IDAgMSAxIDY5IDI1NiBBIDE0NyAxNDcgMCAxIDEgMzYzIDI1NiBaIiBmaWxsPSIjRkZGRkZGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBkPSJNIDMzNi4yMiA4MC4xNyBBIDE4NCAxODQgMCAwIDEgMzM2LjIyIDQzMS44MyBBIDIxMyAyMTMgMCAwIDAgMzM2LjIyIDgwLjE3IFoiIGZpbGw9IiNGRkZGRkYiLz48L3N2Zz4=" alt="proofable.me verified on Proofable"></a>
+  <a href="https://proofable.me/u/proofable"><img src="https://img.shields.io/badge/proofable.me-2F5097?logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IlByb29mYWJsZSBtYXJrIiBzaGFwZS1yZW5kZXJpbmc9Imdlb21ldHJpY1ByZWNpc2lvbiI+PHBhdGggZD0iTSA0MDAgMjU2IEEgMTg0IDE4NCAwIDEgMSAzMiAyNTYgQSAxODQgMTg0IDAgMSAxIDQwMCAyNTYgWiBNIDM2MyAyNTYgQSAxNDcgMTQ3IDAgMSAxIDY5IDI1NiBBIDE0NyAxNDcgMCAxIDEgMzYzIDI1NiBaIiBmaWxsPSIjRkZGRkZGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBkPSJNIDMzNi4yMiA4MC4xNyBBIDE4NCAxODQgMCAwIDEgMzM2LjIyIDQzMS44MyBBIDIxMyAyMTMgMCAwIDAgMzM2LjIyIDgwLjE3IFoiIGZpbGw9IiNGRkZGRkYiLz48L3N2Zz4=" alt="proofable.me"></a>
   <a href="https://www.npmjs.com/package/@proofable/sdk"><img src="https://img.shields.io/npm/v/%40proofable%2Fsdk?label=%40proofable%2Fsdk&color=98C0EF" alt="npm"></a>
   <a href="https://discord.gg/cpNJVuq4UW"><img src="https://img.shields.io/badge/discord-community-5865F2?logo=discord&logoColor=white" alt="Discord"></a>
 </p>
@@ -23,8 +23,6 @@
   <a href="https://proofable.me/marketplace?ref=github">Marketplace</a>
   |
   <a href="https://proofable.me/benchmarks?ref=github">Benchmarks</a>
-  |
-  <a href="https://proofable.me/u/proofable">Our profile</a>
 </p>
 
 ## Run every agent from one place
@@ -50,7 +48,7 @@ Allowed calls go through. Anything else stops before it runs.
 
 <a href="https://cursor.com/en/install-mcp?name=proofable&config=eyJ1cmwiOiJodHRwczovL21jcC5wcm9vZmFibGUubWUvbWNwIn0%3D"><img src="images/buttons/cursor.png" alt="Add to Cursor" height="44"></a>
 <a href="https://vscode.dev/redirect/mcp/install?name=proofable&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.proofable.me%2Fmcp%22%7D"><img src="images/buttons/vscode.png" alt="Install in VS Code" height="44"></a><br>
-<a href="https://insiders.vscode.dev/redirect/mcp/install?name=proofable&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.proofable.me%2Fmcp%22%7D&quality=insiders"><img src="images/buttons/vscode-insiders.png" alt="Install in VS Code Insiders" height="44"></a>
+<a href="https://claude.ai/settings/connectors"><img src="images/buttons/claude.png" alt="Add to Claude" height="44"></a>
 <a href="https://chatgpt.com/plugins/plugin_asdk_app_6ae65c2bac0881918812c63246c7e6c9"><img src="images/buttons/chatgpt.png" alt="Add to ChatGPT" height="44"></a>
 
 Every AI tool on your machine, in one command. It finds Claude Code, Codex, Cursor and VS Code and adds Proofable to each:
@@ -59,7 +57,101 @@ Every AI tool on your machine, in one command. It finds Claude Code, Codex, Curs
 npx -y @proofable/sdk setup
 ```
 
-[Claude Code, Codex, Hermes and every other client](https://github.com/proofable/mcp#connect-in-one-click)
+Or set up one client:
+
+<details>
+<summary><b>Claude Code</b></summary>
+
+Run these in Claude Code to install the server and its skills:
+
+```text
+/plugin marketplace add proofable/mcp
+/plugin install proofable-mcp@proofable
+```
+
+Run `/mcp`, select Proofable and sign in.
+
+</details>
+
+<details>
+<summary><b>Claude and Claude Desktop</b></summary>
+
+[Open Connectors in Claude](https://claude.ai/settings/connectors), add a custom connector with this URL, then choose Connect and sign in.
+
+```text
+https://mcp.proofable.me/mcp
+```
+
+</details>
+
+<details>
+<summary><b>ChatGPT</b></summary>
+
+[Add Proofable to ChatGPT](https://chatgpt.com/plugins/plugin_asdk_app_6ae65c2bac0881918812c63246c7e6c9), select Install plugin, then sign in when ChatGPT asks.
+
+</details>
+
+<details>
+<summary><b>Codex</b></summary>
+
+```bash
+npx -y @proofable/sdk setup --client codex
+codex mcp login proofable
+```
+
+Codex opens browser sign-in.
+
+</details>
+
+<details>
+<summary><b>Cursor</b></summary>
+
+[Add Proofable to Cursor](https://cursor.com/en/install-mcp?name=proofable&config=eyJ1cmwiOiJodHRwczovL21jcC5wcm9vZmFibGUubWUvbWNwIn0%3D), turn it on in Customize, and complete the sign-in Cursor opens.
+
+</details>
+
+<details>
+<summary><b>VS Code</b></summary>
+
+[Install in VS Code](https://vscode.dev/redirect/mcp/install?name=proofable&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.proofable.me%2Fmcp%22%7D) or [VS Code Insiders](https://insiders.vscode.dev/redirect/mcp/install?name=proofable&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.proofable.me%2Fmcp%22%7D&quality=insiders), start Proofable from the MCP server list, and complete the sign-in VS Code opens.
+
+</details>
+
+<details>
+<summary><b>Hermes</b></summary>
+
+```bash
+hermes mcp add proofable --url https://mcp.proofable.me/mcp --auth oauth
+hermes mcp login proofable
+```
+
+</details>
+
+<details>
+<summary><b>Any other client</b></summary>
+
+Add this URL in your client's MCP settings, then complete its sign-in:
+
+```json
+{
+  "mcpServers": {
+    "proofable": {
+      "type": "http",
+      "url": "https://mcp.proofable.me/mcp"
+    }
+  }
+}
+```
+
+Or paste this into your coding agent:
+
+```text
+Set me up for Proofable. With a terminal, run `npx -y @proofable/sdk setup`. Otherwise fetch and follow https://raw.githubusercontent.com/proofable/mcp/main/skills/proofable-setup/SKILL.md
+```
+
+</details>
+
+Keep one Proofable connection per client. A plugin plus a manual entry creates a duplicate.
 
 ## What you get
 
