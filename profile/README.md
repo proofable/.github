@@ -58,21 +58,20 @@ Set me up for Proofable. With a terminal, run `npx -y @proofable/sdk setup`. Oth
 
 ## The platform and the terminal
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <img src="images/platform.png" alt="Your Proofable profile with every connected AI tool sharing the same agents and limits, keys bound to agents with their values hidden, an agent's allowed and blocked actions with its spend cap and end date, and an irreversible action held for approval">
-      <p><b>Your profile.</b> Every AI tool you connect gets the same agents and limits. Keys stay hidden, and risky actions wait for your yes.</p>
-    </td>
-    <td width="50%" valign="top">
-      <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="images/terminal-dark.svg">
-        <img src="images/terminal-light.svg" alt="An agent refunds an order it is allowed to, is stopped before running a command it was never given, and every receipt survives a forgery check">
-      </picture>
-      <p><b>Your terminal.</b> The same rules run wherever the agent does. Allowed calls go through, and anything else stops before it runs.</p>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="images/platform.png" width="880" alt="Your Proofable profile with every connected AI tool sharing the same agents and limits, beside one agent's allowed and blocked actions, spend cap and end date">
+</p>
+
+**Your profile.** Every AI tool you connect gets the same agents and limits, set once.
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="images/terminal-dark.svg">
+    <img src="images/terminal-light.svg" width="760" alt="An agent refunds an order it is allowed to, is stopped before running a command it was never given, and every receipt survives a forgery check">
+  </picture>
+</p>
+
+**Your terminal.** The same rules run wherever the agent does. Allowed calls go through, and anything else stops before it runs.
 
 ## Results
 
