@@ -44,6 +44,17 @@ Approve, stop or chat with any agent, and see every run and the work it is on.
 
 Allowed calls go through. Anything else stops before it runs.
 
+## Ask it to do real work
+
+| You ask any AI tool | What happens |
+|---|---|
+| "Pick up the launch where we left off." | It loads your current notes, rules and agents from your profile |
+| "Refund order 4821 for $18." | Your Operator agent refunds it with the Stripe key it never sees, and leaves a receipt |
+| "Write the Monday brief every week at 9:00." | A scheduled job pulls your team notes and the web, with every source on record |
+| "Triage new alerts." | It files and labels issues, and it cannot run commands or change its own limits |
+| "Close customer account 2291." | It waits for your approval, because the action cannot be undone |
+| "Sell my research report to verified companies." | A listing checks each buyer's company domain and takes payment by card |
+
 ## Start in one click
 
 <a href="https://cursor.com/en/install-mcp?name=proofable&config=eyJ1cmwiOiJodHRwczovL21jcC5wcm9vZmFibGUubWUvbWNwIn0%3D"><img src="images/buttons/cursor.png" alt="Add to Cursor" height="44"></a>
@@ -72,16 +83,38 @@ Or set up one client:
 
 Keep one Proofable connection per client. A plugin plus a manual entry creates a duplicate.
 
-## What you get
+## Proofable against the usual way
 
-- **Nothing explained twice.** Notes, rules, agents and skills load from one profile into every AI tool.
-- **Only what is true now.** A new fact replaces the old one, so answers come out right at a fraction of the tokens.
-- **Agents inside your rules.** Choose what each agent may do, cap its spend and set when its access ends. Irreversible actions wait for you, and one revoke stops it everywhere.
-- **Keys they use and never see.** Credentials stay in a vault, bound to the agent that needs them.
-- **A receipt for every action.** It checks offline in milliseconds, so the next agent trusts the work instead of redoing it.
-- **Prove who you are once.** Reuse it in every app, gate your own app on it, and sell your agents and tools on the [marketplace](https://proofable.me/marketplace?ref=github).
+| You need | The usual way | With Proofable |
+|---|---|---|
+| AI that knows your work | Re-explain it in every tool, or a memory layer that can hand back a replaced fact | One profile in every AI tool, loading only what is true now |
+| Agents that follow your rules | Approval prompts per tool, or a gateway that cannot check who allowed the call | A permission you sign and can revoke, checked before every call |
+| Keys that stay safe | An all-purpose API key pasted into the agent | Keys in a vault, used by the agent and never shown to it |
+| Proof of what happened | Logs and traces you have to take on trust | A signed receipt for every action, checked offline in milliseconds |
+| Work handed between agents | The next agent redoes it | The next agent checks the receipt and carries on |
+| Knowing who you deal with | Sign up and verify again in every app | Prove it once and reuse it everywhere |
 
-## Results
+Keep your sign-in, framework and keys. Proofable adds the limits and the proof.
+
+## Built for every team
+
+| Team | What it does with Proofable |
+|---|---|
+| **Customer support** | Refunds drafted from the ticket and sent once you approve, with a signed receipt for finance |
+| **Engineering** | Alerts triaged with zero shell access, and a code review skill sold to teams that sign in |
+| **Operations** | The Monday brief written before you wake, sources and run on record |
+| **Sales** | A research report sold only to verified company domains, delivered when the check and payment clear |
+| **Legal** | Contract review bought from a firm whose domain you can check first, delivered with a receipt |
+| **Developer tools** | Your MCP server priced per call, connected from Claude or Cursor and settled in USDC |
+| **Communities** | Token holders get in free, and everyone else buys access by card |
+
+## Sell what you build
+
+List an agent, MCP server, skill, report or data set. Choose what buyers must prove, such as a work account, a company domain, proof of human or a token balance. Set it free, one time or per use, then share one link. You keep 90% of every card sale, and every listing links to your public profile so buyers see who is selling.
+
+[Start selling](https://proofable.me/profile/listings/new?ref=github) | [Browse listings](https://proofable.me/hub?ref=github&view=marketplace)
+
+## Measured on public benchmarks
 
 | | Proofable | The usual way |
 |---|---|---|
