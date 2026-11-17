@@ -138,9 +138,9 @@ cd docs/public/evidence/checks && npm install && node tamper-check.mjs
 
 | Repository | What it is |
 |---|---|
-| [**mcp**](https://github.com/proofable/mcp) | The server every AI tool connects to, with one-click installs, plugins and setup skills |
-| [**sdk**](https://github.com/proofable/sdk) | `@proofable/sdk` and the `proofable` CLI, plus the offline receipt checker |
-| [**agent**](https://github.com/proofable/agent) | An agent template that works inside the rules you set |
+| [**mcp**](https://github.com/proofable/mcp) | Connect every AI tool you use to Proofable in one click, with plugins and setup skills |
+| [**sdk**](https://github.com/proofable/sdk) | Build Proofable into your own app and agents, with the `proofable` CLI and the offline receipt checker |
+| [**agent**](https://github.com/proofable/agent) | Your own AI agent that runs on a cloud computer or in any AI tool, inside the limits you set, with a receipt for every run |
 | [**docs**](https://github.com/proofable/docs) | Docs, benchmark evidence and schemas |
 | [**agent-gauntlet**](https://github.com/proofable/agent-gauntlet) | The submission that topped NVIDIA's Live Agent Gauntlet, receipts included |
 
