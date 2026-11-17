@@ -59,6 +59,13 @@ Claude Code installs the server and its skills together:
 /plugin install proofable-mcp@proofable
 ```
 
+Codex, from a terminal:
+
+```bash
+npx -y @proofable/sdk setup --client codex
+codex mcp login proofable
+```
+
 Anywhere else, paste this into your coding agent, or add `https://mcp.proofable.me/mcp` as a connector:
 
 ```text
