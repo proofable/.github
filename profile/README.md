@@ -2,7 +2,7 @@
   <img src="images/hero.webp" width="880" alt="An AI tool picks up your launch notes, rules and agents from your Proofable profile while your keys stay in the vault, and the same profile reaches every AI tool you use">
 </p>
 
-<h1 align="center">The portable proof layer for AI</h1>
+<h1 align="center">AI that knows you, only does what you allow, and proves it</h1>
 
 <p align="center">
   <b>Make AI do your work and prove it.</b><br>
@@ -17,7 +17,7 @@
 </p>
 
 <p align="center">
-  <a href="https://proofable.me/?ref=github">Website</a>
+  <a href="https://proofable.me/?ref=github"><b>Start free</b></a>
   |
   <a href="https://docs.proofable.me">Docs</a>
   |
